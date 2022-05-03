@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мясо и хлеб - Акция</title>
+  <link rel="stylesheet" href="css/main.min.css" />
+  <link rel="stylesheet" href="fonts/rockwellnova/1/stylesheet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-default">
+  <div class="container">
+    <div class="header">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list">
+            <a class="menu__link menu__link--active" href="index.html">Главная</a>
+          </li>
+          <li class="menu__list">
+            <a class="menu__link" href="delivery.html">Доставка</a>
+          </li>
+          <li class="menu__list">
+            <a class="menu__link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="logo" href="index.html">
+        <picture>
+          <source srcset="img/logo.svg" type="image/webp">
+          <img src="img/logo.svg" alt="logo" />
+        </picture>
+      </a>
+      <div class="header__box">
+        <a class="header__phone" href="tel:+78126701555">8 (812) 670-15-55</a>
+        <a class="header__basket" href="basket.html">
+          <img src="img/basket.svg" alt="Корзина" />
+          <p class="basket__num">1</p>
+        </a>
+        <ul class="social-list social-list--top">
+          <li class="social-list__item">
+            <a href="#">
+              <img src="img/social/instagram.svg" alt="инстаграм" />
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="#">
+              <img src="img/social/vk.svg" alt="ВК" />
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="#">
+              <img src="img/social/email.svg" alt="Почта" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <main class="main">
+    <div class="container">
+      <div class="title">
+        <h3>Акции мясного клуба</h3>
+        <div class="subtitle">вкусно и выгодно</div>
+      </div>
+      <div class="sale__img">
+        <img src="img/sale-photo.jpg" alt="" />
+      </div>
+      <div class="sale__description">
+        <div class="sale__header">Скидка 50% каждый день</div>
+        <div class="sale__text">Мы рады предложить вам выгодные условия каждый деньна всю продукцию выпечки в наших заведениях в половину ценыКаждый день с 20:00 до закрытия любую выпечку вы приобретаетес 50%-ой скидкой.</div>
+      </div>
+      <section class="discounts">
+        <div class="title">
+          <h3>Мясные акции</h3>
+          <div class="subtitle">лучшие предложения</div>
+        </div>
+        <div class="discounts__content">
+          <div class="discounts__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="discounts-cart" href="sale.html">
+                  <div class="discounts-cart__images">
+                    <picture>
+                      <source srcset="img/discount.webp" type="image/webp">
+                      <img class="discounts-cart__img" src="img/discount.jpg" alt="Акция" />
+                    </picture>
+                  </div>
+                  <div class="discounts-cart__desc">
+                    <div class="discounts-club__title">Каждый день</div>
+                    <p class="discounts-club__time"> после 20:00</p>
+                    <p class="discounts-club__text">на всю сладкую выпечку
+                      <br> скидка 50%
+                    </p>
+                  </div>
+                  <span class="discounts-club__more">подробнее</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="discounts-cart" href="sale.html">
+                  <div class="discounts-cart__images">
+                    <img class="discounts-cart__img" src="img/discount.jpg" alt="Акция" />
+                  </div>
+                  <div class="discounts-cart__desc">
+                    <div class="discounts-club__title">Каждый день</div>
+                    <p class="discounts-club__time"> после 20:00</p>
+                    <p class="discounts-club__text">на всю сладкую выпечку
+                      <br> скидка 50%
+                    </p>
+                  </div>
+                  <span class="discounts-club__more">подробнее</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="discounts-cart" href="sale.html">
+                  <div class="discounts-cart__images">
+                    <img class="discounts-cart__img" src="img/discount.jpg" alt="Акция" />
+                  </div>
+                  <div class="discounts-cart__desc">
+                    <div class="discounts-club__title">Каждый день</div>
+                    <p class="discounts-club__time"> после 20:00</p>
+                    <p class="discounts-club__text">на всю сладкую выпечку
+                      <br> скидка 50%
+                    </p>
+                  </div>
+                  <span class="discounts-club__more">подробнее</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a class="discounts__kink" href="#">
+            <img src="img/arrow-link.svg" alt="" />
+          </a>
+        </div>
+      </section>
+      <div class="delivery">
+        <div class="delivery__title">Доставка</div>
+        <a class="delivery__btn" href="delivery.html">заказать</a>
+      </div>
+      <div class="contacts" id="map">
+        <div class="title">
+          <h3>Мы всегда рядом</h3>
+          <div class="subtitle">всегда на связи</div>
+        </div>
+        <div class="contacts__map"> </div>
+      </div>
+      <div class="phone">
+        <p class="phone__text">Единый номер:</p>
+        <a class="phone__number" href="tel:+78126701555">8 (812) 670-15-55</a>
+      </div>
+      <footer class="footer">
+        <div class="addresses">
+          <div class="addresses__item">
+            <ul class="addresses-list">
+              <li class="addresses-list__item addresses-list__item--orange">
+                <a href="#">Ул. ворошилова 3</a>
+              </li>
+              <li class="addresses-list__item addresses-list__item--orange">
+                <a href="#">пр. коммуны 63</a>
+              </li>
+              <li class="addresses-list__item addresses-list__item--orange">
+                <a href="#">Кудрово, ул.Пражская 16</a>
+              </li>
+            </ul>
+          </div>
+          <div class="addresses__item">
+            <ul class="addresses-list">
+              <li class="addresses-list__item addresses-list__item--blue">
+                <a href="#">Выборгское шоссе 15</a>
+              </li>
+              <li class="addresses-list__item addresses-list__item--blue">
+                <a href="#">Учебный переулок 3а</a>
+              </li>
+              <li class="addresses-list__item addresses-list__item--blue">
+                <a href="#">Типанова 27/39</a>
+              </li>
+              <li class="addresses-list__item addresses-list__item--blue">
+                <a href="#">Суздальский 7</a>
+              </li>
+              <li class="addresses-list__item addresses-list__item--blue">
+                <a href="#">Светлановский 48 к4</a>
+              </li>
+            </ul>
+          </div>
+          <div class="addresses__item">
+            <ul class="addresses-list">
+              <li class="addresses-list__item addresses-list__item--green">
+                <a href="#">9-я линия В.О. д 16</a>
+              </li>
+              <li class="addresses-list__item addresses-list__item--red">
+                <a href="#">Пр. Просвещения 74\2</a>
+              </li>
+              <li class="addresses-list__item addresses-list__item--red">
+                <a href="#">Пр.Науки 23</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="download">
+          <a class="download__apple" href="">
+            <img src="img/apple.svg" alt="" />
+          </a>
+          <a class="download__android" href="">
+            <img src="img/google.svg" alt="" />
+          </a>
+        </div>
+        <div class="footer__bottom">
+          <a class="footer__doc" href="#">Юридические документы</a>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a href="#">
+                <img src="img/social/instagram.svg" alt="инстаграм" />
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#">
+                <img src="img/social/vk.svg" alt="ВК" />
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#">
+                <img src="img/social/email.svg" alt="Почта" />
+              </a>
+            </li>
+          </ul>
+          <div class="phone phone--footer">
+            <p class="phone__text phone__text--footer">Единый номер:</p>
+            <a class="phone__number phone__number--footer" href="tel:+78126701555">8 (812) 670-15-55</a>
+          </div>
+        </div>
+        <div class="copyright">2022</div>
+      </footer>
+    </div>
+  </main>
+</body>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
