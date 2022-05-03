@@ -1,0 +1,97 @@
+html,
+body {
+  min-height: 100%;
+}
+body {
+  font-family: "Rockwell Nova", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  background: linear-gradient(180deg, #340000 34.78%, #a8291f 120.64%);
+}
+.main {
+  margin-top: 102px;
+}
+.container {
+  // width: 2196px;
+  width: 90%;
+  margin: 0 auto;
+}
+.hidden {
+  display: none;
+}
+
+.title {
+  position: relative;
+
+  h3 {
+    font-size: 55px;
+    line-height: 1;
+  }
+}
+.subtitle {
+  position: absolute;
+  right: -3%;
+  top: -35px;
+  font-size: 105px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.phone {
+  text-align: center;
+  &--footer {
+  }
+  &--restaraunt {
+    position: absolute;
+    text-align: left;
+    bottom: 45px;
+  }
+}
+.phone__text {
+  font-size: 50px;
+  line-height: 66px;
+  text-transform: uppercase;
+  &--footer {
+    font-size: 20px;
+    line-height: 26px;
+    text-decoration-line: underline;
+  }
+  &--restaraunt {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+.phone__number {
+  font-size: 80px;
+  line-height: 105px;
+  &--footer {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  &--restaraunt {
+    font-size: 50px;
+    line-height: 66px;
+  }
+}
+
+.download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+
+  &--restauran {
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+button {
+  background: transparent;
+  color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

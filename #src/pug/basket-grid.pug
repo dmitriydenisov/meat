@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Мясо и хлеб - Корзина
+        link(rel="stylesheet" href="css/main.min.css")
+        link(rel="stylesheet" href="fonts/rockwellnova/1/stylesheet.css")
+        link(rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css")
+    body
+        .container
+            .header 
+                nav.menu
+                    ul.menu__list
+                        li.menu__list 
+                            a.menu__link(href="index.html") Главная
+                        li.menu__list 
+                            a.menu__link(href="delivery.html") Доставка
+                        li.menu__list 
+                            a.menu__link(href="contacts.html") Контакты
+                a.logo(href="index.html")
+                        img(src="img/logo.svg", alt="logo") 
+                .header__box 
+                    a.header__phone(href="tel:+78126701555") 8 (812) 670-15-55
+                    a.header__basket(href="basket.html")
+                        img(src="img/basket.svg", alt="Корзина")
+                        p.basket__num 1
+                    ul.social-list.social-list--top
+                        li.social-list__item 
+                            a(href="#")
+                                img(src="img/social/instagram.svg", alt="инстаграм")
+                        li.social-list__item 
+                            a(href="#")
+                                img(src="img/social/vk.svg", alt="ВК")
+                        li.social-list__item 
+                            a(href="#")
+                                img(src="img/social/email.svg", alt="Почта")
+    main.main
+        .container
+            .title
+                h3 Корзина
+                .subtitle Ваш заказ доставки
+            .basket-content
+                a.prev-page__link(href="delivery.html") Вернуться к покупкам
+                form.basket-content__form
+                    .form__left
+                        input.basket-content__input(type="text", placeholder="Имя")
+                        input.basket-content__input(type="text", placeholder="Адрес доставки")
+                        .basket-content__numbers
+                            .basket-content__home
+                                input.basket-content__input(type="text", placeholder="Дом")
+                                input.basket-content__input(type="text", placeholder="Корпус")
+                                input.basket-content__input(type="text", placeholder="кв/офис")
+                            .basket-content__phone
+                                input.basket-content__input(type="text", placeholder="Телефон")
+                        .title
+                            h3 Ваш заказ
+                        .basket-products.basket-products--grid
+                            .cart.cart--delivery 
+                                img.cart__img(src="img/products/product.jpg", alt="салат")
+                                .cart__desc 
+                                    .cart__price 
+                                        .new-price 119₽
+                                        .old-price 119₽
+                                    .cart__name Салат  с  курой  и огурцами
+                                    .cart__add
+                                        .cart__count.cart__count--basket(data-counter="") 
+                                            button.cart-btn.cart-minus
+                                                img(src="img/minus.svg", alt="убрать")
+                                            span.count 1
+                                            button.cart-btn.cart-plus
+                                                img(src="img/plus.svg", alt="добавить")
+                            .cart.cart--delivery 
+                                img.cart__img(src="img/products/product.jpg", alt="салат")
+                                .cart__desc 
+                                    .cart__price 
+                                        .new-price 119₽
+                                        .old-price 119₽
+                                    .cart__name Салат  с  курой  и огурцами
+                                    .cart__add
+                                        .cart__count.cart__count--basket(data-counter="") 
+                                            button.cart-btn.cart-minus
+                                                img(src="img/minus.svg", alt="убрать")
+                                            span.count 1
+                                            button.cart-btn.cart-plus
+                                                img(src="img/plus.svg", alt="добавить")
+                            .cart.cart--delivery 
+                                img.cart__img(src="img/products/product.jpg", alt="салат")
+                                .cart__desc 
+                                    .cart__price 
+                                        .new-price 119₽
+                                        .old-price 119₽
+                                    .cart__name Салат  с  курой  и огурцами
+                                    .cart__add
+                                        .cart__count.cart__count--basket(data-counter="") 
+                                            button.cart-btn.cart-minus
+                                                img(src="img/minus.svg", alt="убрать")
+                                            span.count 1
+                                            button.cart-btn.cart-plus
+                                                img(src="img/plus.svg", alt="добавить")
+                            .cart.cart--delivery 
+                                img.cart__img(src="img/products/product.jpg", alt="салат")
+                                .cart__desc 
+                                    .cart__price 
+                                        .new-price 119₽
+                                        .old-price 119₽
+                                    .cart__name Салат  с  курой  и огурцами
+                                    .cart__add
+                                        .cart__count.cart__count--basket(data-counter="") 
+                                            button.cart-btn.cart-minus
+                                                img(src="img/minus.svg", alt="убрать")
+                                            span.count 1
+                                            button.cart-btn.cart-plus
+                                                img(src="img/plus.svg", alt="добавить")
+                            .cart.cart--delivery 
+                                img.cart__img(src="img/products/product.jpg", alt="салат")
+                                .cart__desc 
+                                    .cart__price 
+                                        .new-price 119₽
+                                        .old-price 119₽
+                                    .cart__name Салат  с  курой  и огурцами
+                                    .cart__add
+                                        .cart__count.cart__count--basket(data-counter="") 
+                                            button.cart-btn.cart-minus
+                                                img(src="img/minus.svg", alt="убрать")
+                                            span.count 1
+                                            button.cart-btn.cart-plus
+                                                img(src="img/plus.svg", alt="добавить")
+                            .cart.cart--delivery 
+                                img.cart__img(src="img/products/product.jpg", alt="салат")
+                                .cart__desc 
+                                    .cart__price 
+                                        .new-price 119₽
+                                        .old-price 119₽
+                                    .cart__name Салат  с  курой  и огурцами
+                                    .cart__add
+                                        .cart__count.cart__count--basket(data-counter="") 
+                                            button.cart-btn.cart-minus
+                                                img(src="img/minus.svg", alt="убрать")
+                                            span.count 1
+                                            button.cart-btn.cart-plus
+                                                img(src="img/plus.svg", alt="добавить")
+                    .form__right
+                        .amount
+                            .amount__title сумма заказа
+                            .amount-cost
+                                .amount-cost__item
+                                    .amount-cost__name Общая стоимость:
+                                    .amount-cost__sum 781
+                                .amount-cost__item
+                                    .amount-cost__name Стоимость доставки:
+                                    .amount-cost__sum 329
+                                .amount-cost__item
+                                    .amount-cost__name Скидка:
+                                    .amount-cost__sum 432
+                                .amount-cost__item
+                                    .amount-cost__name Итого:
+                                    .amount-cost__sum 1248
+                    button.basket-products__btn Оформить
+            footer.footer
+                .download 
+                    a.download__apple(href="") 
+                        img(src="img/apple.svg", alt="")
+                    a.download__android(href="") 
+                        img(src="img/google.svg", alt="")
+                .footer__bottom
+                    a.footer__doc(href="#") Юридические документы
+                    ul.social-list
+                        li.social-list__item 
+                            a(href="#")
+                                img(src="img/social/instagram.svg", alt="инстаграм")
+                        li.social-list__item 
+                            a(href="#")
+                                img(src="img/social/vk.svg", alt="ВК")
+                        li.social-list__item 
+                            a(href="#")
+                                img(src="img/social/email.svg", alt="Почта")
+                    .phone.phone--footer
+                        p.phone__text.phone__text--footer Единый номер:
+                        a.phone__number.phone__number--footer(href="tel:+78126701555") 8 (812) 670-15-55
+                .copyright 2022
+script(src="js/main.js")

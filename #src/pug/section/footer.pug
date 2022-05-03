@@ -1,0 +1,237 @@
+footer.footer
+    .addresses
+        .addresses__item
+            ul.addresses-list
+                li.addresses-list__item.addresses-list__item--orange
+                    a(href="#") Ул. ворошилова 3
+                li.addresses-list__item.addresses-list__item--orange
+                    a(href="#") пр. коммуны 63
+                li.addresses-list__item.addresses-list__item--orange
+                    a(href="#") Кудрово, ул.Пражская 16
+        .addresses__item
+            ul.addresses-list
+                li.addresses-list__item.addresses-list__item--blue
+                    a(href="#") Выборгское шоссе 15
+                li.addresses-list__item.addresses-list__item--blue
+                    a(href="#") Учебный переулок 3а
+                li.addresses-list__item.addresses-list__item--blue
+                    a(href="#") Типанова 27/39
+                li.addresses-list__item.addresses-list__item--blue
+                    a(href="#") Суздальский 7
+                li.addresses-list__item.addresses-list__item--blue
+                    a(href="#") Светлановский 48 к4
+        .addresses__item
+            ul.addresses-list
+                li.addresses-list__item.addresses-list__item--green
+                    a(href="#") 9-я линия В.О. д 16
+                li.addresses-list__item.addresses-list__item--red
+                    a(href="#") Пр. Просвещения 74\2
+                li.addresses-list__item.addresses-list__item--red
+                    a(href="#") Пр.Науки 23
+    a.footer__phone--mobile(href="tel:+78126701555") 8 (812) 670-15-55
+    .download 
+        a.download__apple(href="") 
+            img(src="img/apple.svg", alt="")
+        a.download__android(href="") 
+            img(src="img/google.svg", alt="")
+    .footer__bottom
+        a.footer__doc(href="#") Юридические документы
+        ul.social-list
+            li.social-list__item 
+                a(href="#")
+                    img(src="img/social/instagram.svg", alt="инстаграм")
+            li.social-list__item 
+                a(href="#")
+                    img(src="img/social/vk.svg", alt="ВК")
+            li.social-list__item 
+                a(href="#")
+                    img(src="img/social/email.svg", alt="Почта")
+        .phone.phone--footer
+            p.phone__text.phone__text--footer Единый номер:
+            a.phone__number.phone__number--footer(href="tel:+78126701555") 8 (812) 670-15-55
+    .copyright 2022
+
+    .mobile-nav 
+        a.mobile-nav__item(href="index.html")
+            .mobile-nav__img 
+                img(src="img/mobileMenu/home.svg", alt="home")
+            .mobile-nav__text  главная
+        a.mobile-nav__item(href="delivery.html")
+            .mobile-nav__img 
+                img(src="img/mobileMenu/delivery.svg", alt="delivery")
+            .mobile-nav__text доставка
+        .mobile-nav__item(data-geo="")
+            .mobile-nav__img 
+                img(src="img/mobileMenu/geo.svg", alt="geo")
+            .mobile-nav__text заведения
+        .mobile-nav__item(data-contact="")
+            .mobile-nav__img 
+                img(src="img/mobileMenu/contacts.svg", alt="contacts")
+            .mobile-nav__text контакты
+        .mobile-nav__item(data-basket="")
+            .mobile-nav__img 
+                img(src="img/mobileMenu/basket.svg", alt="basket")
+            .mobile-nav__text корзина
+.modal(data-modal-contact) 
+    button.delivery-popup__close(data-closeMobile)
+        span
+    .addresses
+        .addresses__item
+            ul.addresses-list
+                li.addresses-list__item.addresses-list__item--orange Ул. ворошилова 3
+                li.addresses-list__item.addresses-list__item--orange пр. коммуны 63
+                li.addresses-list__item.addresses-list__item--orange Кудрово, ул.Пражская 16
+        .addresses__item
+            ul.addresses-list
+                li.addresses-list__item.addresses-list__item--blue Выборгское шоссе 15
+                li.addresses-list__item.addresses-list__item--blue Учебный переулок 3а
+                li.addresses-list__item.addresses-list__item--blue Типанова 27/39
+                li.addresses-list__item.addresses-list__item--blue Суздальский 7
+                li.addresses-list__item.addresses-list__item--blue Светлановский 48 к4
+        .addresses__item
+            ul.addresses-list
+                li.addresses-list__item.addresses-list__item--green 9-я линия В.О. д 16
+                li.addresses-list__item.addresses-list__item--red Пр. Просвещения 74\2
+                li.addresses-list__item.addresses-list__item--red Пр.Науки 23
+
+.modal(data-modal-restaraunt) 
+    button.delivery-popup__close(data-closeMobile)
+        span
+    .modal__slider.swiper
+        .swiper-wrapper 
+            .swiper-slide 
+                img(src="img/usercontent/photo-1.jpg", alt="Фото 1")
+            .swiper-slide
+                img(src="img/usercontent/photo-2.jpg", alt="Фото 2")
+            .swiper-slide
+                img(src="img/usercontent/photo-3.jpg", alt="Фото 3")
+            .swiper-slide
+                img(src="img/usercontent/photo-3.jpg", alt="Фото 3")
+        .swiper-button-next
+        .swiper-button-prev
+    .modal__description Краткое описание интерьера заведения для детального понимания посетителем антуража и эмоции на предстоящем ужине или обеде.
+
+.modal(data-modal-basket) 
+    button.delivery-popup__close(data-closeMobile)
+        span
+    .products
+        .products__item
+            .products__img
+                img(src="img/products/product.jpg", alt="салат")
+            .products__content
+                .products__name Салат  с  курой  и огурцами
+                .products__bottom
+                    .cart__price 
+                        .new-price 119₽
+                        .old-price 119₽
+                    .cart__count(data-counter="") 
+                        button.cart-btn.cart-minus
+                            img(src="img/minus.svg", alt="убрать")
+                        span.count 1
+                        button.cart-btn.cart-plus
+                            img(src="img/plus.svg", alt="добавить")
+            button.products__delete(data-delete)
+                span
+        .products__item
+            .products__img
+                img(src="img/products/product.jpg", alt="салат")
+            .products__content
+                .products__name Салат  с  курой  и огурцами
+                .products__bottom
+                    .cart__price 
+                        .new-price 119₽
+                        .old-price 119₽
+                    .cart__count(data-counter="") 
+                        button.cart-btn.cart-minus
+                            img(src="img/minus.svg", alt="убрать")
+                        span.count 1
+                        button.cart-btn.cart-plus
+                            img(src="img/plus.svg", alt="добавить")
+            button.products__delete(data-delete)
+                span
+        .products__item
+            .products__img
+                img(src="img/products/product.jpg", alt="салат")
+            .products__content
+                .products__name Салат  с  курой  и огурцами
+                .products__bottom
+                    .cart__price 
+                        .new-price 119₽
+                        .old-price 119₽
+                    .cart__count(data-counter="") 
+                        button.cart-btn.cart-minus
+                            img(src="img/minus.svg", alt="убрать")
+                        span.count 1
+                        button.cart-btn.cart-plus
+                            img(src="img/plus.svg", alt="добавить")
+            button.products__delete(data-delete)
+                span
+        .products__item
+            .products__img
+                img(src="img/products/product.jpg", alt="салат")
+            .products__content
+                .products__name Салат  с  курой  и огурцами
+                .products__bottom
+                    .cart__price 
+                        .new-price 119₽
+                        .old-price 119₽
+                    .cart__count(data-counter="") 
+                        button.cart-btn.cart-minus
+                            img(src="img/minus.svg", alt="убрать")
+                        span.count 1
+                        button.cart-btn.cart-plus
+                            img(src="img/plus.svg", alt="добавить")
+            button.products__delete(data-delete)
+                span
+        .products__item
+            .products__img
+                img(src="img/products/product.jpg", alt="салат")
+            .products__content
+                .products__name Салат  с  курой  и огурцами
+                .products__bottom
+                    .cart__price 
+                        .new-price 119₽
+                        .old-price 119₽
+                    .cart__count(data-counter="") 
+                        button.cart-btn.cart-minus
+                            img(src="img/minus.svg", alt="убрать")
+                        span.count 1
+                        button.cart-btn.cart-plus
+                            img(src="img/plus.svg", alt="добавить")
+            button.products__delete(data-delete)
+                span
+    button.basket-products__btn.basket-products__btn--modal(data-order-btn) Оформить
+.modal(data-modal-order) 
+    button.delivery-popup__close(data-closeMobile)
+        span
+    .modal__header Оформление заказа
+    form.modal-form
+        label.modal-form__label Кому
+        input.modal-form__input(type="text", placeholder='имя')
+        input.modal-form__input(type="text", placeholder='Телефон +7( )')
+        label.modal-form__label Куда
+        input.modal-form__input(type="text", placeholder='Адрес доставки')
+        .modal-form__from
+            input.modal-form__input(type="text", placeholder='Дом')
+            input.modal-form__input(type="text", placeholder='Корпус')
+            input.modal-form__input(type="text", placeholder='Кв/офис')
+        .modal-form__time
+            label.check
+                input.check__input(type="checkbox")
+                span.check__box
+                span.check__title  Как можно быстрее
+            label.check
+                input.check__input(type="checkbox")
+                span.check__box
+                span.check__title  К определенному времени
+        input.modal-form__input.modal-form__input--smole(type="number" placeholder='Кол-во приборов') 
+        input.modal-form__input(type="text" placeholder='Комментарий к заказу')
+        .modal-form__links
+            a.modal-form__link(href="#") Зоны доставки
+            a.modal-form__link(href="#") Условия доставки
+        label.check
+            input.check__input(type="checkbox")
+            span.check__box
+            span.check__title  Я даю свое согласие на обработку персональных данных
+        input.modal-form__button(type="submit", value="Оформить")
+

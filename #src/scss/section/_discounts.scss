@@ -1,0 +1,70 @@
+.discounts {
+  margin-top: 85px;
+  margin-bottom: 135px;
+}
+.discounts__content {
+  display: flex;
+  align-items: center;
+  .swiper-pointer-events {
+    width: 1852px;
+  }
+}
+.discounts-cart {
+  display: flex;
+  margin-top: 45px;
+}
+.discounts-cart__desc {
+  width: 355px;
+  margin-top: 35px;
+}
+.discounts-cart__images {
+  position: relative;
+  width: 385px;
+  height: 385px;
+  margin-right: 58px;
+  border: 4px solid #ca4f45;
+  margin-top: 35px;
+  margin-left: 25px;
+  &:before {
+    content: "";
+    position: absolute;
+    background: #000000;
+    box-shadow: 0px 4px 50px #a8291f;
+    top: -35px;
+    left: -25px;
+    width: 385px;
+    height: 385px;
+    z-index: -1;
+  }
+}
+.discounts-cart__img {
+  width: 100%;
+}
+
+.discounts-club__title {
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+}
+.discounts-club__time {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 53px;
+  margin: 20px 0;
+}
+.discounts-club__text {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 40px;
+  // white-space: pre-line;
+}
+
+.discounts-club__more {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 40px;
+  background: transparent;
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+}

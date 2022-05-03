@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Мясо и хлеб - Главная
+        link(rel="stylesheet" href="css/main.min.css")
+        link(rel="stylesheet" href="fonts/rockwellnova/1/stylesheet.css")
+        link(rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css")
+    body.bg-default 
+        .container
+            .header 
+                nav.menu
+                    ul.menu__list
+                        li.menu__list 
+                            a.menu__link.menu__link--active(href="#") Главная
+                        li.menu__list 
+                            a.menu__link(href="delivery.html") Доставка
+                        li.menu__list 
+                            a.menu__link(href="contacts.html") Контакты
+                a.logo(href="index.html")
+                        img(src="img/logo.svg", alt="logo") 
+                .header__box 
+                    a.header__phone(href="tel:+78126701555") 8 (812) 670-15-55
+                    a.header__basket(href="basket.html")
+                        img(src="img/basket.svg", alt="Корзина")
+                        p.basket__num 1
+                    ul.social-list.social-list--top
+                        li.social-list__item 
+                            a(href="#")
+                                img(src="img/social/instagram.svg", alt="инстаграм")
+                        li.social-list__item 
+                            a(href="#")
+                                img(src="img/social/vk.svg", alt="ВК")
+                        li.social-list__item 
+                            a(href="#")
+                                img(src="img/social/email.svg", alt="Почта")
+    main.main
+        .container
+            section.clubs
+                .title
+                    h3 Мясные клубы
+                    .subtitle Там где вкусно
+                    .subtitle.subtitle--mobile Там где вкус
+                .clubs__slider.swiper
+                    .swiper-wrapper 
+                        .swiper-slide 
+                            a(href="restaurant.html") 
+                                .cart 
+                                    img.cart__img(src="img/xxl.jpg", alt="")
+                                    .cart__desc 
+                                        .club__name Мясной клуб
+                                        .club__adress ул.Ворошилова  3
+                        .swiper-slide
+                            a(href="restaurant.html") 
+                                .cart 
+                                    img.cart__img(src="img/xxl.jpg", alt="")
+                                    .cart__desc 
+                                        .club__name Мясной клуб
+                                        .club__adress ул.Ворошилова  3
+                        .swiper-slide
+                            a(href="restaurant.html") 
+                                .cart 
+                                    img.cart__img(src="img/xxl.jpg", alt="")
+                                    .cart__desc 
+                                        .club__name Мясной клуб
+                                        .club__adress ул.Ворошилова  3
+                        .swiper-slide
+                            a(href="restaurant.html") 
+                                .cart 
+                                    img.cart__img(src="img/xxl.jpg", alt="")
+                                    .cart__desc 
+                                        .club__name Мясной клуб
+                                        .club__adress ул.Ворошилова  3
+                        .swiper-slide
+                            a(href="restaurant.html") 
+                                .cart 
+                                    img.cart__img(src="img/xxl.jpg", alt="")
+                                    .cart__desc 
+                                        .club__name Мясной клуб
+                                        .club__adress ул.Ворошилова  3
+                        .swiper-slide
+                            a(href="restaurant.html") 
+                                .cart 
+                                    img.cart__img(src="img/xxl.jpg", alt="")
+                                    .cart__desc 
+                                        .club__name Мясной клуб
+                                        .club__adress ул.Ворошилова  3
+                        .swiper-slide
+                            a(href="restaurant.html") 
+                                .cart 
+                                    img.cart__img(src="img/xxl.jpg", alt="")
+                                    .cart__desc 
+                                        .club__name Мясной клуб
+                                        .club__adress ул.Ворошилова  3
+                a(href="#map").map-link Смотреть на карте 
+            section.discounts
+                .title
+                    h3 Мясные акции
+                    .subtitle лучшие предложения
+                    .subtitle.subtitle--big.subtitle--mobile.
+                         вкусно 
+                         и выгодно
+                .discounts__content
+                    .discounts__slider.swiper
+                        .swiper-wrapper 
+                            .swiper-slide 
+                                a.discounts-cart(href="sale.html") 
+                                    .discounts-cart__images
+                                        img.discounts-cart__img(src="img/discount.jpg", alt="Акция")
+                                    .discounts-cart__desc 
+                                        .discounts-club__title Каждый день
+                                        p.discounts-club__time  после 20:00
+                                        p.discounts-club__text на всю сладкую <br> выпечку <br> скидка 50%
+                                    a.discounts-club__more(href="#") подробнее
+                            .swiper-slide 
+                                a.discounts-cart(href="sale.html")
+                                    .discounts-cart__images
+                                        img.discounts-cart__img(src="img/discount.jpg", alt="Акция")
+                                    .discounts-cart__desc 
+                                        .discounts-club__title Каждый день
+                                        p.discounts-club__time  после 20:00
+                                        p.discounts-club__text на всю сладкую <br> выпечку <br> скидка 50%
+                                    a.discounts-club__more(href="#") подробнее
+                            .swiper-slide 
+                                a.discounts-cart(href="sale.html")
+                                    .discounts-cart__images
+                                        img.discounts-cart__img(src="img/discount.jpg", alt="Акция")
+                                    .discounts-cart__desc 
+                                        .discounts-club__title Каждый день
+                                        p.discounts-club__time  после 20:00
+                                        p.discounts-club__text на всю сладкую <br> выпечку <br> скидка 50%
+                                    a.discounts-club__more(href="#") подробнее
+                    a.discounts__kink(href="#")
+                        img(src="img/arrow-link.svg", alt="")
+            .delivery
+                .delivery__title Доставка
+                a.delivery__btn(href="delivery.html") заказать
+            .contacts#map
+                .title
+                    h3 Мы всегда рядом
+                    .subtitle всегда на связи
+                    .subtitle.subtitle--mobile всегда на связи
+                .map 
+                    
+                .phone
+                    p.phone__text Единый номер:
+                    a.phone__number(href="tel:+78126701555") 8 (812) 670-15-55
+            include section/footer.pug
+        
+    script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
+    script(src="js/main.js")

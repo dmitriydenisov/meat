@@ -1,0 +1,94 @@
+@import "_global";
+@import "_reset";
+
+//sections
+@import "section/header";
+@import "section/clubs";
+@import "section/discounts";
+
+.delivery {
+  text-align: center;
+  width: 1983px;
+  margin-bottom: 220px;
+}
+.delivery__title {
+  text-align: right;
+  position: relative;
+  font-size: 300px;
+  line-height: 395px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  &:after {
+    content: "доставляем  мясо прямо до вашего дома";
+    position: absolute;
+    font-size: 70px;
+    line-height: 1;
+    bottom: 25px;
+    right: 0px;
+    width: 1590px;
+    text-transform: none;
+  }
+}
+.delivery__btn {
+  background: #851b13;
+  border: 4px solid #ca4f45;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 24px #a8291f;
+  border-radius: 60px;
+  padding: 23px 90px 23px 105px;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 53px;
+  &:hover {
+    color: #851b13;
+    background: #fff;
+  }
+}
+.map {
+  margin-top: 50px;
+  margin-bottom: 273px;
+  height: 730px;
+}
+.contacts {
+  margin-bottom: 60px;
+}
+
+@import "section/footer";
+@import "pages/restauran";
+@import "pages/delivery";
+@import "pages/basket";
+@import "pages/about";
+
+.sale__img {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.sale__description {
+  width: 1541px;
+  margin-bottom: 340px;
+}
+.sale__header {
+  font-size: 55px;
+  line-height: 72px;
+}
+.sale__text {
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 59px;
+  white-space: pre-line;
+}
+
+.subtitle--mobile,
+.mobile-nav,
+.footer__phone--mobile,
+.modal,
+.restaurant-menu--mobile,
+.restaurant__photo,
+.clubs__slider--restaurant,
+.card__price--mobile,
+.slogan--mobile,
+.title--mobile {
+  display: none;
+}
+
+@import "media";

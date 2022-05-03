@@ -1,0 +1,51 @@
+.title--about .subtitle {
+  right: 550px;
+  top: 0;
+}
+.about-img {
+  position: relative;
+  z-index: -1;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1468px;
+    height: 525px;
+    top: 0;
+    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../img/logo-bg.png");
+    filter: drop-shadow(1px 0px 100px rgba(168, 41, 31, 0.6));
+  }
+}
+.about-content {
+  margin-bottom: 250px;
+}
+.about-content__title {
+  font-size: 55px;
+  line-height: 72px;
+  margin-bottom: 25px;
+}
+.about-content__text {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 40px;
+  margin-left: 55px;
+  p + p {
+    margin-top: 50px;
+  }
+}
+
+.restaurant__slider--about {
+  margin-bottom: 95px;
+}
+
+.phone--about {
+  width: 720px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.phone--about p {
+  text-align: right;
+}
