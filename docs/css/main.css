@@ -11,9 +11,9 @@ body {
   position: relative;
 }
 
-.bg-bull {
+.bg-bull,
+.bg-delivery-r {
   position: absolute;
-  left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -22,7 +22,8 @@ body {
   max-width: 100%;
 }
 
-.bg-ram {
+.bg-ram,
+.bg-delivery-b {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -32,6 +33,14 @@ body {
           transform: translateX(-50%);
   z-index: -1;
   max-width: 100%;
+}
+
+.bg-bull {
+  left: 0;
+}
+
+.bg-delivery-r {
+  right: 0;
 }
 
 .main {
