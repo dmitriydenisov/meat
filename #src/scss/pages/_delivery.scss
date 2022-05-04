@@ -92,6 +92,9 @@
     margin-top: 22px;
   }
 }
+.btn-block__btn {
+  text-transform: uppercase;
+}
 .btn-block__btn-more.btn-block__item-more--active + .btn-block-more {
   display: block;
 }

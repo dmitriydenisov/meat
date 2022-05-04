@@ -8,6 +8,7 @@ html(lang="ru")
         link(rel="stylesheet" href="fonts/rockwellnova/1/stylesheet.css")
         link(rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css")
     body.bg-delivery
+        .mobile-title сеть мяс ных <span> клу бов
         .container
             .header 
                 nav.menu
@@ -46,8 +47,8 @@ html(lang="ru")
                     p.categories__title Категории:
                     .btn-block 
                         ul.btn-block__list 
-                            li.btn-block__item 
-                                button.btn-block__btn.btn-block__item--active(data-variant="Донер") Донер
+                            li.btn-block__item(data-variant="Донер")
+                                button.btn-block__btn.btn-block__item--active Донер
                             li.btn-block__item(data-variant="Холодные закуски")
                                 button.btn-block__btn.wm Холодные закуски
                             li.btn-block__item(data-variant="Горячие закуски")
@@ -1600,7 +1601,7 @@ html(lang="ru")
                                         span.count 1
                                         button.cart-btn.cart-plus
                                             img(src="img/plus.svg", alt="добавить")
-                footer.footer
+                footer.footer.footer-delivery
                     .download 
                         a.download__apple(href="") 
                             img(src="img/apple.svg", alt="")

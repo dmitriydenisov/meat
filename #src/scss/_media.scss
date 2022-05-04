@@ -142,9 +142,9 @@
   }
 }
 @media (max-width: 2050px) {
-  body.bg-default {
-    background-position: bottom, left 1185px;
-  }
+  // body.bg-default {
+  //   background-position: bottom, left 1185px;
+  // }
   .delivery__title {
     font-size: 215px;
     line-height: 320px;
@@ -868,6 +868,26 @@
   body {
     // overflow-x: hidden;
   }
+  .mobile-title {
+    display: block;
+    position: absolute;
+    width: 177px;
+    top: 0;
+    left: 18px;
+
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 45px;
+    text-transform: uppercase;
+
+    color: rgba(255, 255, 255, 0.1);
+    span {
+      position: absolute;
+      width: 140px;
+      top: 0;
+      right: -123px;
+    }
+  }
   .menu {
     display: none;
   }
@@ -1190,15 +1210,20 @@
     width: 150px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    font-weight: 300;
   }
   .products__bottom {
     display: flex;
     justify-content: space-between;
     .cart__price {
+      display: flex;
       font-size: 15px;
       line-height: 20px;
       width: 105px;
       margin-right: 55px;
+    }
+    .cart__count {
+      display: flex;
     }
     .cart-minus {
       display: flex;
@@ -1319,16 +1344,13 @@
     position: absolute;
     padding: 10px 0 0 10px;
     &::-webkit-scrollbar {
-      // width: display: none;
       width: 0;
     }
     .wm {
       width: 243px;
     }
   }
-  .btn-block__btn {
-    text-transform: uppercase;
-  }
+
   .btn-block__item--btn {
     display: none;
   }
@@ -1357,6 +1379,7 @@
   .cart__add {
     padding: 6px 0;
     width: auto;
+    margin-top: 6px;
   }
   .cart__name {
     font-size: 10px;
@@ -1395,9 +1418,16 @@
     margin-bottom: 0;
   }
   .delivery-popup.modal-active {
-    z-index: 3;
+    // z-index: 3;
+    width: auto;
+    height: auto;
+    bottom: 0;
+    top: auto;
   }
   .delivery-popup__body {
+    width: 90%;
+    padding-bottom: 118px;
+    padding-top: 45px;
     .cart__btn,
     .cart__count {
       display: block;
@@ -1463,5 +1493,8 @@
   }
   .delivery-popup__body .cart__count {
     display: flex;
+  }
+  .title--restaraunt .subtitle {
+    font-size: 39px;
   }
 }

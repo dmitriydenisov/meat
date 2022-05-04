@@ -66,36 +66,39 @@ if (document.documentElement.clientWidth >= 1000) {
       },
     });
   }
+  //табы на странице ресторана
+  const tabItems = Array.from(
+    document.querySelectorAll(".restaurant-menu__btn")
+  );
+  const contentItem = Array.from(
+    document.querySelectorAll(".tabs-content__item")
+  );
+
+  const clearActiveClass = (element, className = "active") => {
+    element.find((item) => item.classList.remove(`${className}`));
+  };
+
+  const setActiveClass = (element, index, className = "active") => {
+    element[index].classList.add(`${className}`);
+  };
+
+  const checkoutTabs = (item, index) => {
+    item.addEventListener("click", () => {
+      if (item.classList.contains("active")) return;
+
+      clearActiveClass(tabItems);
+      clearActiveClass(contentItem);
+
+      setActiveClass(tabItems, index);
+      setActiveClass(contentItem, index);
+    });
+  };
+
+  tabItems.forEach(checkoutTabs);
 }
 
-//табы на странице ресторана
-const tabItems = Array.from(document.querySelectorAll(".restaurant-menu__btn"));
-const contentItem = Array.from(
-  document.querySelectorAll(".tabs-content__item")
-);
-
-const clearActiveClass = (element, className = "active") => {
-  element.find((item) => item.classList.remove(`${className}`));
-};
-
-const setActiveClass = (element, index, className = "active") => {
-  element[index].classList.add(`${className}`);
-};
-
-const checkoutTabs = (item, index) => {
-  item.addEventListener("click", () => {
-    if (item.classList.contains("active")) return;
-
-    clearActiveClass(tabItems);
-    clearActiveClass(contentItem);
-
-    setActiveClass(tabItems, index);
-    setActiveClass(contentItem, index);
-  });
-};
-
-tabItems.forEach(checkoutTabs);
-
+if (document.documentElement.clientWidth < 1000) {
+}
 //изменение количесвткатовара в карточке
 const counters1 = document.querySelectorAll("[data-counter]");
 for (const count of counters1) {
@@ -198,12 +201,14 @@ if (document.querySelector("[data-contact]")) {
 }
 
 //модальое окно ресторана
-if (document.querySelector("[data-geo]")) {
-  document.querySelector("[data-geo]").addEventListener("click", () => {
-    document
-      .querySelector("[data-modal-restaraunt]")
-      .classList.toggle("modal-active");
-  });
+if (document.querySelector("[data-restaraunt-btn]")) {
+  document
+    .querySelector("[data-restaraunt-btn]")
+    .addEventListener("click", () => {
+      document
+        .querySelector("[data-modal-restaraunt]")
+        .classList.toggle("modal-active");
+    });
 }
 
 //модальное окно корзины
@@ -271,13 +276,23 @@ function summBasket() {
   }
   sumBusket = totalSum + sumDelivery - totalSale;
 
-  document.querySelector("[data-total-sum]").innerText =
-    totalSum.toLocaleString();
-  document.querySelector("[data-sale-sum]").innerText =
-    totalSale.toLocaleString();
-  document.querySelector("[data-total]").innerText = sumBusket.toLocaleString();
-  document.querySelector("[data-delivery-sum]").innerText =
-    sumDelivery.toLocaleString();
+  if (document.querySelector("[data-total-sum]")) {
+    document.querySelector("[data-total-sum]").innerText =
+      totalSum.toLocaleString();
+  }
+  {
+    if (document.querySelector("[data-sale-sum]"))
+      document.querySelector("[data-sale-sum]").innerText =
+        totalSale.toLocaleString();
+  }
+  if (document.querySelector("[data-total]")) {
+    document.querySelector("[data-total]").innerText =
+      sumBusket.toLocaleString();
+  }
+  if (document.querySelector("[data-delivery-sum]")) {
+    document.querySelector("[data-delivery-sum]").innerText =
+      sumDelivery.toLocaleString();
+  }
 }
 if (document.querySelector(".basket-content")) {
   summBasket();

@@ -7,7 +7,28 @@ body {
   color: #fff;
   font-weight: 700;
   background: linear-gradient(180deg, #340000 34.78%, #a8291f 120.64%);
+  // background: url("../img/bg/bg-ram.svg"), url("../img/bg/bg-bull.svg"),
+  //   linear-gradient(180deg, #340000 34.78%, #a8291f 120.64%);
+  // background-position: bottom, left center;
+
+  background-repeat: no-repeat;
+  // background-size: cover;
 }
+.bg-default::before {
+  // content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(50%);
+  z-index: -5;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bg/bg-bull.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+
 .main {
   margin-top: 102px;
 }
@@ -39,7 +60,7 @@ body {
 
 .phone {
   text-align: center;
-  margin: 55px auto;
+  // margin: 55px auto;
   &--footer {
   }
   &--restaraunt {
