@@ -15,33 +15,22 @@ body {
   // background-size: cover;
   position: relative;
 }
-.bg-default::before {
-  content: "";
+.bg-bull {
   position: absolute;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
   z-index: -5;
-  width: 1150px;
-  height: 1268px;
-  background-image: url(../img/bg/bg-bull.svg);
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
+  max-width: 100%;
 }
-.bg-default::after {
-  content: "";
+.bg-ram {
   position: absolute;
+  bottom: 0;
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
   z-index: -1;
-  width: 1920px;
-  height: 800px;
-  background-image: url("../img/bg/bg-ram.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
+  max-width: 100%;
 }
 
 .main {

@@ -35,7 +35,7 @@
     line-height: 48px;
   }
   .copyright {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
   .btn-block__item {
     font-size: 26px;
@@ -865,11 +865,9 @@
   }
 }
 @media (max-width: 560px) {
-  body {
-    &:after,
-    &:before {
-      display: none;
-    }
+  .bg-bull,
+  .bg-ram {
+    display: none;
   }
   .mobile-title {
     display: block;
