@@ -20,6 +20,11 @@
   padding: 30px 40px;
   width: 2216px;
 }
+.btn-block__list {
+  display: flex;
+}
+.btn-block__item {
+}
 .btn-block__item {
   background: transparent;
   border: none;
@@ -39,7 +44,7 @@
   margin-left: 40px;
 }
 
-.btn-block__item-more {
+.btn-block__btn-more {
   position: absolute;
   background: transparent;
   border: none;
@@ -78,7 +83,7 @@
   .btn-block__item {
     display: block;
   }
-  .btn-block__item-more {
+  .btn-block__btn-more {
     position: static;
     margin-bottom: 75px;
   }
@@ -87,7 +92,7 @@
     margin-top: 22px;
   }
 }
-.btn-block__item-more.btn-block__item-more--active + .btn-block-more {
+.btn-block__btn-more.btn-block__item-more--active + .btn-block-more {
   display: block;
 }
 

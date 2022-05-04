@@ -15,7 +15,7 @@ html(lang="ru")
                         li.menu__list 
                             a.menu__link(href="index.html") Главная
                         li.menu__list 
-                            a.menu__link(href="delivery.html") Доставка
+                            a.menu__link.menu__link--active(href="delivery.html") Доставка
                         li.menu__list 
                             a.menu__link(href="contacts.html") Контакты
                 a.logo(href="index.html")
@@ -45,21 +45,35 @@ html(lang="ru")
                 .categories
                     p.categories__title Категории:
                     .btn-block 
-                        button.btn-block__item.btn-block__item--active(data-variant="Донер") Донер
-                        button.btn-block__item(data-variant="Холодные закуски") Холодные закуски
-                        button.btn-block__item(data-variant="Горячие закуски") Горячие закуски
-                        button.btn-block__item(data-variant="Десерты") Десерты
-                        button.btn-block__item(data-variant="супы") супы
-                        button.btn-block__item(data-variant="Салаты") Салаты
-                        button.btn-block__item(data-variant="Мангал") Мангал
-                        button.btn-block__item-more еще
-                        .btn-block-more
-                            button.btn-block__item-more еще
-                            button.btn-block__item(data-variant="Салаты1") Салаты
-                            button.btn-block__item(data-variant="Салаты2") Салаты
-                            button.btn-block__item(data-variant="Салаты3") Салаты
-                            button.btn-block__item(data-variant="Салаты4") Салаты
-                            button.btn-block__item(data-variant="Салаты5") Салаты
+                        ul.btn-block__list 
+                            li.btn-block__item 
+                                button.btn-block__btn.btn-block__item--active(data-variant="Донер") Донер
+                            li.btn-block__item(data-variant="Холодные закуски")
+                                button.btn-block__btn.wm Холодные закуски
+                            li.btn-block__item(data-variant="Горячие закуски")
+                                button.btn-block__btn.wm Горячие закуски
+                            li.btn-block__item(data-variant="Десерты")
+                                button.btn-block__btn Десерты
+                            li.btn-block__item(data-variant="супы")
+                                button.btn-block__btn супы
+                            li.btn-block__item(data-variant="Салаты")
+                                button.btn-block__btn Салаты
+                            li.btn-block__item(data-variant="Мангал")
+                                button.btn-block__btn Мангал
+                            li.btn-block__item--btn 
+                                button.btn-block__btn-more еще
+                                .btn-block-more
+                                    button.btn-block__btn-more еще
+                                    button.btn-block__item(data-variant="Салаты1") Салаты
+                                    button.btn-block__item(data-variant="Салаты2") Салаты
+                                    button.btn-block__item(data-variant="Салаты3") Салаты
+                                    button.btn-block__item(data-variant="Салаты4") Салаты
+                                    button.btn-block__item(data-variant="Салаты5") Салаты
+
+                        
+                        
+                        
+                        
                 .delivery__content 
                     .categories__items.categories__items--active(data-variant="Донер")
                         .cart.cart--delivery

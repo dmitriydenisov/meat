@@ -977,11 +977,13 @@
     display: block;
     column-count: 2;
     margin-bottom: 30px;
+    .addresses-list__item--orange:first-child {
+      margin-top: 0;
+    }
   }
   .addresses-list__item {
     font-size: 8px;
     line-height: 26px;
-    // margin-bottom: 15px;
   }
   .footer__phone--mobile {
     display: block;
@@ -1258,10 +1260,6 @@
     line-height: 20px;
     width: auto;
   }
-  //временно
-  .title--restaraunt:before {
-    display: none;
-  }
   .restaurant-menu--mobile {
     display: block;
     text-align: center;
@@ -1307,12 +1305,32 @@
     font-size: 15px;
     line-height: 20px;
   }
+  .btn-block__list {
+    margin-left: 80px;
+  }
   .btn-block {
-    display: flex;
-    overflow: auto;
+    width: calc(100vw - 113px);
+    z-index: -2;
+    overflow: hidden;
+    overflow-x: auto;
+    scrollbar-width: none;
+    border-radius: 30px 0 0 30px;
+    right: -19px;
     position: absolute;
-    z-index: -1;
-    left: 27%;
+    padding: 10px 0 0 10px;
+    &::-webkit-scrollbar {
+      // width: display: none;
+      width: 0;
+    }
+    .wm {
+      width: 243px;
+    }
+  }
+  .btn-block__btn {
+    text-transform: uppercase;
+  }
+  .btn-block__item--btn {
+    display: none;
   }
   .categories__items {
     width: 350px;
@@ -1323,7 +1341,7 @@
   .btn-block__item {
     font-weight: 300;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 1;
   }
   .cart--delivery {
     width: 150px;

@@ -127,7 +127,7 @@ for (const count of counters1) {
 const counters = document.querySelectorAll("[data-counter]");
 
 //меню на странице доставки
-const menu = document.querySelector(".btn-block__item-more");
+const menu = document.querySelector(".btn-block__btn-more");
 
 if (menu) {
   menu.addEventListener("click", function () {
