@@ -1008,6 +1008,15 @@
     font-size: 8px;
     line-height: 26px;
   }
+  .download {
+    margin-bottom: 25px;
+  }
+  .footer__bottom {
+    padding-bottom: 60px;
+  }
+  .footer__doc {
+    font-size: 10px;
+  }
   .footer__phone--mobile {
     display: block;
     text-align: center;
@@ -1018,6 +1027,17 @@
     text-decoration-line: underline;
 
     color: #ca4f45;
+  }
+  .social-list {
+    width: 100%;
+    order: -1;
+  }
+  .copyright {
+    font-size: 10px;
+    width: auto;
+  }
+  .autograph {
+    display: block;
   }
   .mobile-nav {
     position: fixed;

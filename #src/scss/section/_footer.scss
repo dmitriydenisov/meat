@@ -45,6 +45,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 25px;
 }
 
 .social-list__item + .social-list__item {
@@ -53,11 +54,14 @@
 .footer__bottom {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 .copyright {
   text-align: center;
   padding-bottom: 44px;
+  width: 100%;
+  flex-shrink: 0;
 }
 // .footer {
 //   position: relative;
