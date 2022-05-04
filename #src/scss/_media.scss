@@ -866,7 +866,9 @@
 }
 @media (max-width: 560px) {
   .bg-bull,
-  .bg-ram {
+  .bg-ram,
+  .bg-delivery-r,
+  .bg-delivery-b {
     display: none;
   }
   .mobile-title {
@@ -1036,6 +1038,8 @@
     width: 70px;
     height: 70px;
     display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: end;
     flex-wrap: wrap;
     justify-content: center;
@@ -1315,6 +1319,9 @@
       width: 368px;
       height: 197px;
     }
+  }
+  .categories {
+    padding-top: 15px;
   }
   .tabs-content {
     margin-top: 50px;
