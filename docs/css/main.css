@@ -16,6 +16,7 @@ body {
 }
 
 .bg-default::before {
+  content: "";
   position: absolute;
   left: 0;
   top: 50%;
@@ -28,6 +29,23 @@ body {
   background-image: url(../img/bg/bg-bull.svg);
   background-repeat: no-repeat;
   background-position: left;
+  background-size: contain;
+}
+
+.bg-default::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
+  width: 1920px;
+  height: 800px;
+  background-image: url("../img/bg/bg-ram.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
   background-size: contain;
 }
 
@@ -197,7 +215,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 70px;
+  padding-top: 70px;
 }
 
 .menu {
