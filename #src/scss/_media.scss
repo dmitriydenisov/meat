@@ -866,7 +866,10 @@
 }
 @media (max-width: 560px) {
   body {
-    // overflow-x: hidden;
+    &:after,
+    &:before {
+      display: none;
+    }
   }
   .mobile-title {
     display: block;
