@@ -2570,7 +2570,9 @@ a {
 
 @media (max-width: 560px) {
   .bg-bull,
-  .bg-ram {
+  .bg-ram,
+  .bg-delivery-r,
+  .bg-delivery-b {
     display: none;
   }
 
@@ -2778,8 +2780,8 @@ a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
+    -ms-flex-align: end;
+    align-items: end;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -3148,6 +3150,10 @@ a {
        object-fit: cover;
     width: 368px;
     height: 197px;
+  }
+
+  .categories {
+    padding-top: 15px;
   }
 
   .tabs-content {
