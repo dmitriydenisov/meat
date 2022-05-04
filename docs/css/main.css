@@ -1,10 +1,5 @@
 @charset "UTF-8";
 
-html,
-body {
-  min-height: 100%;
-}
-
 body {
   font-family: "Rockwell Nova", sans-serif;
   color: #fff;
@@ -13,40 +8,30 @@ body {
   background: -o-linear-gradient(top, #340000 34.78%, #a8291f 120.64%);
   background: linear-gradient(180deg, #340000 34.78%, #a8291f 120.64%);
   background-repeat: no-repeat;
+  position: relative;
 }
 
-.bg-default::before {
-  content: "";
+.bg-bull {
   position: absolute;
   left: 0;
   top: 50%;
-  -webkit-transform: translateY(50%);
-      -ms-transform: translateY(50%);
-          transform: translateY(50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   z-index: -5;
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/bg/bg-bull.svg);
-  background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
+  max-width: 100%;
 }
 
-.bg-default::after {
-  content: "";
+.bg-ram {
   position: absolute;
+  bottom: 0;
   left: 50%;
   bottom: 0;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: -1;
-  width: 1920px;
-  height: 800px;
-  background-image: url("../img/bg/bg-ram.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
+  max-width: 100%;
 }
 
 .main {
@@ -576,7 +561,7 @@ a {
 
 .copyright {
   text-align: center;
-  margin-bottom: 44px;
+  padding-bottom: 44px;
 }
 
 .title--restaraunt:before {
@@ -1543,7 +1528,7 @@ a {
   }
 
   .copyright {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
 
   .btn-block__item {
@@ -2575,6 +2560,11 @@ a {
 }
 
 @media (max-width: 560px) {
+  .bg-bull,
+  .bg-ram {
+    display: none;
+  }
+
   .mobile-title {
     display: block;
     position: absolute;

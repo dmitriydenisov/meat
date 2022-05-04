@@ -10,7 +10,12 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
-<body class="bg-default">
+<body>
+  <picture>
+    <source srcset="img/bg/bg-bull.svg" type="image/webp">
+    <img class="bg-bull" src="img/bg/bg-bull.svg" alt="" />
+  </picture>
+  <img class="bg-ram" src="img/bg/bg-ram.svg" alt="" />
   <div class="mobile-title">сеть мяс ных <span> клу бов</div>
   <div class="container">
     <div class="header">
@@ -28,10 +33,7 @@
         </ul>
       </nav>
       <a class="logo" href="index.html">
-        <picture>
-          <source srcset="img/logo.svg" type="image/webp">
-          <img src="img/logo.svg" alt="logo" />
-        </picture>
+        <img src="img/logo.svg" alt="logo" />
       </a>
       <div class="header__box">
         <a class="header__phone" href="tel:+78126701555">8 (812) 670-15-55</a>
@@ -175,7 +177,7 @@
                       <br> скидка 50%
                     </p>
                   </div>
-                  <a class="discounts-club__more" href="#">подробнее</a>
+                  <span class="discounts-club__more">подробнее</span>
                 </a>
               </div>
               <div class="swiper-slide">
@@ -191,7 +193,7 @@
                       <br> скидка 50%
                     </p>
                   </div>
-                  <a class="discounts-club__more" href="#">подробнее</a>
+                  <span class="discounts-club__more">подробнее</span>
                 </a>
               </div>
               <div class="swiper-slide">
@@ -207,7 +209,7 @@
                       <br> скидка 50%
                     </p>
                   </div>
-                  <a class="discounts-club__more" href="#">подробнее</a>
+                  <span class="discounts-club__more">подробнее</span>
                 </a>
               </div>
             </div>
