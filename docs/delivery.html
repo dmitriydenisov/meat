@@ -11,6 +11,7 @@
 </head>
 
 <body class="bg-delivery">
+  <div class="mobile-title">сеть мяс ных <span> клу бов</div>
   <div class="container">
     <div class="header">
       <nav class="menu">
@@ -19,7 +20,7 @@
             <a class="menu__link" href="index.html">Главная</a>
           </li>
           <li class="menu__list">
-            <a class="menu__link" href="delivery.html">Доставка</a>
+            <a class="menu__link menu__link--active" href="delivery.html">Доставка</a>
           </li>
           <li class="menu__list">
             <a class="menu__link" href="contacts.html">Контакты</a>
@@ -68,22 +69,40 @@
       <div class="categories">
         <p class="categories__title">Категории:</p>
         <div class="btn-block">
-          <button class="btn-block__item btn-block__item--active" data-variant="Донер">Донер</button>
-          <button class="btn-block__item" data-variant="Холодные закуски">Холодные закуски</button>
-          <button class="btn-block__item" data-variant="Горячие закуски">Горячие закуски</button>
-          <button class="btn-block__item" data-variant="Десерты">Десерты</button>
-          <button class="btn-block__item" data-variant="супы">супы</button>
-          <button class="btn-block__item" data-variant="Салаты">Салаты</button>
-          <button class="btn-block__item" data-variant="Мангал">Мангал</button>
-          <button class="btn-block__item-more">еще</button>
-          <div class="btn-block-more">
-            <button class="btn-block__item-more">еще</button>
-            <button class="btn-block__item" data-variant="Салаты1">Салаты</button>
-            <button class="btn-block__item" data-variant="Салаты2">Салаты</button>
-            <button class="btn-block__item" data-variant="Салаты3">Салаты</button>
-            <button class="btn-block__item" data-variant="Салаты4">Салаты</button>
-            <button class="btn-block__item" data-variant="Салаты5">Салаты</button>
-          </div>
+          <ul class="btn-block__list">
+            <li class="btn-block__item" data-variant="Донер">
+              <button class="btn-block__btn btn-block__item--active">Донер</button>
+            </li>
+            <li class="btn-block__item" data-variant="Холодные закуски">
+              <button class="btn-block__btn wm">Холодные закуски</button>
+            </li>
+            <li class="btn-block__item" data-variant="Горячие закуски">
+              <button class="btn-block__btn wm">Горячие закуски</button>
+            </li>
+            <li class="btn-block__item" data-variant="Десерты">
+              <button class="btn-block__btn">Десерты</button>
+            </li>
+            <li class="btn-block__item" data-variant="супы">
+              <button class="btn-block__btn">супы</button>
+            </li>
+            <li class="btn-block__item" data-variant="Салаты">
+              <button class="btn-block__btn">Салаты</button>
+            </li>
+            <li class="btn-block__item" data-variant="Мангал">
+              <button class="btn-block__btn">Мангал</button>
+            </li>
+            <li class="btn-block__item--btn">
+              <button class="btn-block__btn-more">еще</button>
+              <div class="btn-block-more">
+                <button class="btn-block__btn-more">еще</button>
+                <button class="btn-block__item" data-variant="Салаты1">Салаты</button>
+                <button class="btn-block__item" data-variant="Салаты2">Салаты</button>
+                <button class="btn-block__item" data-variant="Салаты3">Салаты</button>
+                <button class="btn-block__item" data-variant="Салаты4">Салаты</button>
+                <button class="btn-block__item" data-variant="Салаты5">Салаты</button>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="delivery__content">
@@ -2337,7 +2356,7 @@
           </div>
         </div>
       </div>
-      <footer class="footer">
+      <footer class="footer footer-delivery">
         <div class="download">
           <a class="download__apple" href="">
             <img src="img/apple.svg" alt="" />
