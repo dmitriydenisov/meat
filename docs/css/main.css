@@ -2248,11 +2248,12 @@ a {
   }
 
   .sale__description {
+    width: 705px;
     margin-bottom: 187px;
   }
 
-  .sale__description {
-    width: auto;
+  .sale__text {
+    margin-top: 25px;
   }
 
   .sale__header {
@@ -2729,6 +2730,11 @@ a {
 
   .phone {
     display: none;
+  }
+
+  .sale__header {
+    line-height: 1;
+    margin-bottom: 10px;
   }
 
   .addresses {
