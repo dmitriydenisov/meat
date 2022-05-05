@@ -297,3 +297,12 @@ function summBasket() {
 if (document.querySelector(".basket-content")) {
   summBasket();
 }
+
+//маска времени
+$.mask.definitions["H"] = "[012]";
+$.mask.definitions["h"] = "[0123]";
+$.mask.definitions["M"] = "[012345]";
+$(".delivery-popup__input").mask("Hh:M9");
+
+//маска телефона
+$(".modal-form__input--phone").mask("+7(999) 999-99-99");
