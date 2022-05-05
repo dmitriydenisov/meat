@@ -2880,12 +2880,14 @@ a {
     border-radius: 20px 20px 0px 0px;
     z-index: 2;
     width: 370px;
+    height: 90vh;
     position: fixed;
     margin: 0 auto;
     bottom: 0;
     left: 0;
     right: 0;
     padding: 85px 22px;
+    padding-top: 40px;
   }
 
   .modal .addresses {
@@ -2895,8 +2897,14 @@ a {
   }
 
   .modal .addresses-list__item {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     text-transform: uppercase;
+    line-height: 2;
+  }
+  .modal .products {
+    height: 80%;
+    overflow: hidden;
+    overflow-y: auto;
   }
 
   .modal-active {
