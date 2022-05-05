@@ -192,8 +192,8 @@ if (document.querySelector("[data-btnBasket]")) {
     });
 }
 //модальное окно контактов
-if (document.querySelector("[data-contact]")) {
-  document.querySelector("[data-contact]").addEventListener("click", () => {
+if (document.querySelector("[data-geo]")) {
+  document.querySelector("[data-geo]").addEventListener("click", () => {
     document
       .querySelector("[data-modal-contact]")
       .classList.toggle("modal-active");
