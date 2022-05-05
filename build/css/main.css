@@ -310,6 +310,7 @@ a {
 .clubs__slider {
   margin-top: 50px;
   width: 95%;
+  padding-bottom: 8px !important;
 }
 
 .cart {
@@ -333,6 +334,7 @@ a {
 }
 
 .club__name {
+  text-transform: uppercase;
   color: #ca4f45;
   font-size: 30px;
   line-height: 40px;
@@ -869,7 +871,7 @@ a {
 .cart__add {
   background: #a8291f;
   border-radius: 20px;
-  width: 396px;
+  width: 100%;
   margin-top: 27px;
   padding: 19px 32px;
   display: -webkit-box;
@@ -1680,8 +1682,12 @@ a {
     font-size: 57px;
   }
 
-  .btn-block__item {
-    font-size: 20px;
+  .btn-block__item + .btn-block__item {
+    margin-left: 35px;
+  }
+  .btn-block__item,
+  .btn-block__btn-more {
+    font-size: 25px;
   }
 
   .cart__price--basket {
@@ -1694,7 +1700,10 @@ a {
     font-size: 215px;
     line-height: 320px;
   }
-
+  .btn-block__item,
+  .btn-block__btn-more {
+    font-size: 23px;
+  }
   .delivery__title:after {
     font-size: 50px;
   }
@@ -1738,7 +1747,7 @@ a {
   }
 }
 
-@media (max-width: 1980px) {
+@media (max-width: 1985px) {
   .club__adress {
     font-size: 25px;
   }
@@ -1751,8 +1760,12 @@ a {
     width: 270px;
     height: 270px;
   }
+  .club__name {
+    font-size: 27px;
+  }
 }
-
+@media (max-width: 1944px) {
+}
 @media (max-width: 1920px) {
   .map-link {
     font-size: 30px;
@@ -1815,6 +1828,19 @@ a {
 
   .delivery__title:after {
     font-size: 47px;
+  }
+}
+@media (max-width: 1863px) {
+  .club__name {
+    font-size: 25px;
+  }
+  .club__adress {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1781px) {
+  .club__name {
+    font-size: 22px;
   }
 }
 
@@ -2010,9 +2036,9 @@ a {
     line-height: 26px;
   }
 
-  .cart__add {
+  /* .cart__add {
     width: 305px;
-  }
+  } */
 
   .cart__btn {
     font-size: 22px;
