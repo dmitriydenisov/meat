@@ -2215,6 +2215,10 @@ a {
   .delivery-popup__title {
     font-size: 15px;
   }
+  .delivery-popup__form {
+    width: 315px;
+    margin: 0 auto;
+  }
 
   .delivery-popup__body .cart__add {
     margin-top: 15px;

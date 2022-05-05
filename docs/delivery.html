@@ -2628,7 +2628,7 @@
           <form class="modal-form">
             <label class="modal-form__label">Кому</label>
             <input class="modal-form__input" type="text" placeholder="имя" />
-            <input class="modal-form__input" type="text" placeholder="Телефон +7( )" />
+            <input class="modal-form__input phone" type="text" placeholder="Телефон +7( )" />
             <label class="modal-form__label">Куда</label>
             <input class="modal-form__input" type="text" placeholder="Адрес доставки" />
             <div class="modal-form__from">
@@ -2665,64 +2665,66 @@
       </footer>
     </div>
   </main>
-</body>
-<div class="delivery-popup" id="popup">
-  <div class="wrapper">
-    <div class="delivery-popup__body">
-      <button class="delivery-popup__close" data-btnBasket="data-btnBasket">
-        <span></span>
-      </button>
-      <div class="delivery-popup__image">
-        <img src="img/products/product.jpg" alt="Салат" />
-      </div>
-      <div class="delivery-popup__content">
-        <div class="delivery-popup__info">
-          <div class="delivery-popup__title">Салат с курой и огурцами</div>
-          <div class="cart__price">
-            <div class="new-price">119₽</div>
-            <div class="old-price">119₽</div>
-          </div>
+  <div class="delivery-popup" id="popup">
+    <div class="wrapper">
+      <div class="delivery-popup__body">
+        <button class="delivery-popup__close" data-btnBasket="data-btnBasket">
+          <span></span>
+        </button>
+        <div class="delivery-popup__image">
+          <img src="img/products/product.jpg" alt="Салат" />
         </div>
-        <div class="delivery-popup__text">это простой в приготовлении и лёгкий салат, который подойдет для праздничного и повседневного стола. Курицу для салата предлагаю запечь со специями - получится очень вкусно!</div>
-        <div class="delivery-popup-description">
-          <div class="delivery-popup-description__item delivery-popup-description__item--title">
-            <div class="delivery-popup-description__name">Содержание</div>
-            <div class="delivery-popup-description__kkol">ккал/г</div>
+        <div class="delivery-popup__content">
+          <div class="delivery-popup__info">
+            <div class="delivery-popup__title">Салат с курой и огурцами</div>
+            <div class="cart__price">
+              <div class="new-price">119₽</div>
+              <div class="old-price">119₽</div>
+            </div>
           </div>
-          <div class="delivery-popup-description__item">
-            <div class="delivery-popup-description__name">Жиры</div>
-            <div class="delivery-popup-description__kkol">36.6</div>
+          <div class="delivery-popup__text">это простой в приготовлении и лёгкий салат, который подойдет для праздничного и повседневного стола. Курицу для салата предлагаю запечь со специями - получится очень вкусно!</div>
+          <div class="delivery-popup-description">
+            <div class="delivery-popup-description__item delivery-popup-description__item--title">
+              <div class="delivery-popup-description__name">Содержание</div>
+              <div class="delivery-popup-description__kkol">ккал/г</div>
+            </div>
+            <div class="delivery-popup-description__item">
+              <div class="delivery-popup-description__name">Жиры</div>
+              <div class="delivery-popup-description__kkol">36.6</div>
+            </div>
+            <div class="delivery-popup-description__item">
+              <div class="delivery-popup-description__name">Белки</div>
+              <div class="delivery-popup-description__kkol">14</div>
+            </div>
+            <div class="delivery-popup-description__item">
+              <div class="delivery-popup-description__name">Углеводы</div>
+              <div class="delivery-popup-description__kkol">214</div>
+            </div>
+            <div class="delivery-popup-description__item">
+              <div class="delivery-popup-description__name">Каллории</div>
+              <div class="delivery-popup-description__kkol">214</div>
+            </div>
           </div>
-          <div class="delivery-popup-description__item">
-            <div class="delivery-popup-description__name">Белки</div>
-            <div class="delivery-popup-description__kkol">14</div>
-          </div>
-          <div class="delivery-popup-description__item">
-            <div class="delivery-popup-description__name">Углеводы</div>
-            <div class="delivery-popup-description__kkol">214</div>
-          </div>
-          <div class="delivery-popup-description__item">
-            <div class="delivery-popup-description__name">Каллории</div>
-            <div class="delivery-popup-description__kkol">214</div>
-          </div>
-        </div>
-        <div class="cart__add">
-          <button class="cart__btn">Добавить</button>
-          <div class="cart__count" data-counter="">
-            <button class="cart-btn cart-minus">
-              <img src="img/minus.svg" alt="убрать" />
-            </button>
-            <span class="count">1</span>
-            <button class="cart-btn cart-plus">
-              <img src="img/plus.svg" alt="добавить" />
-            </button>
+          <div class="cart__add">
+            <button class="cart__btn">Добавить</button>
+            <div class="cart__count" data-counter="">
+              <button class="cart-btn cart-minus">
+                <img src="img/minus.svg" alt="убрать" />
+              </button>
+              <span class="count">1</span>
+              <button class="cart-btn cart-plus">
+                <img src="img/plus.svg" alt="добавить" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+  <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://snipp.ru/cdn/maskedinput/jquery.maskedinput.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
 
 </html>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="js/main.js"></script>
