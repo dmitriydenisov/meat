@@ -173,12 +173,14 @@ const modal = document.querySelector(".delivery-popup");
 for (const cart of carts) {
   cart.addEventListener("click", () => {
     modal.classList.add("modal-active");
+    document.body.style.overflow = "hidden";
   });
 }
 const closeModal = document.querySelector("[data-btnBasket]");
 if (closeModal) {
   closeModal.addEventListener("click", () => {
     modal.classList.remove("modal-active");
+    document.body.style.overflow = "auto";
   });
 }
 
@@ -197,6 +199,7 @@ if (document.querySelector("[data-geo]")) {
     document
       .querySelector("[data-modal-contact]")
       .classList.toggle("modal-active");
+    document.body.style.overflow = "hidden";
   });
 }
 
@@ -208,6 +211,7 @@ if (document.querySelector("[data-restaraunt-btn]")) {
       document
         .querySelector("[data-modal-restaraunt]")
         .classList.toggle("modal-active");
+      document.body.style.overflow = "hidden";
     });
 }
 
@@ -217,6 +221,7 @@ if (document.querySelector("[data-basket]")) {
     document
       .querySelector("[data-modal-basket]")
       .classList.toggle("modal-active");
+    document.body.style.overflow = "hidden";
   });
 }
 //модальное окно формы
@@ -229,6 +234,7 @@ if (document.querySelector("[data-order-btn]")) {
     document
       .querySelector("[data-modal-basket]")
       .classList.remove("modal-active");
+    document.body.style.overflow = "hidden";
   });
 }
 //слайдер в модальном окне
@@ -252,6 +258,8 @@ const closeMobiles = document.querySelectorAll("[data-closeMobile]");
 for (const closeMobile of closeMobiles) {
   closeMobile.addEventListener("click", () => {
     closeMobile.closest(".modal").classList.remove("modal-active");
+
+    document.body.style.overflow = "auto";
   });
 }
 
