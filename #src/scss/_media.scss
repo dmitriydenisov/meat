@@ -606,7 +606,7 @@
     max-width: 100%;
   }
   .sale__description {
-    width: 705px;
+    width: auto;
     margin-bottom: 187px;
   }
   .sale__text {
@@ -911,6 +911,9 @@
       width: 100%;
     }
   }
+  // .sale__description {
+  //   width: auto;
+  // }
   .cart {
     border: 1px solid #ca4f45;
   }
