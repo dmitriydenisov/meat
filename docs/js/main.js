@@ -2,7 +2,6 @@ if (document.querySelector(".clubs__slider")) {
   const swiper = new Swiper(".clubs__slider", {
     slidesPerView: 2.4,
     spaceBetween: 15,
-    // centeredSlides: true,
     loop: true,
     autoplay: {
       delay: 1500,
@@ -18,10 +17,6 @@ if (document.querySelector(".clubs__slider")) {
         slidesPerView: 4,
         spaceBetween: 39,
       },
-      // 1920: {
-      //   slidesPerView: 4,
-      //   spaceBetween: 39,
-      // },
     },
   });
 }
@@ -48,6 +43,7 @@ if (document.documentElement.clientWidth >= 1000) {
     const restaurantSlider = new Swiper(".restaurant__slider", {
       autoHeight: true,
       slidesPerView: 3,
+      autoWidth: true,
       spaceBetween: 22,
       loop: true,
       autoplay: {

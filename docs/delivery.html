@@ -68,9 +68,11 @@
     <main class="main">
       <div class="container">
         <div class="title">
-          <h3>Доставка</h3>
+          <h3 class="delivery-desktop">Доставка</h3>
           <div class="subtitle">прямо до двери</div>
-          <div class="subtitle subtitle--mobile">прямо до двери</div>
+
+          <h3 class="delivery-mobile">Мясные клубы</h3>
+          <div class="subtitle subtitle--mobile">Там где вкус</div>
         </div>
         <div class="categories">
           <p class="categories__title">Категории:</p>
@@ -2377,6 +2379,90 @@
             </div>
           </div>
         </div>
+        <section class="discounts discounts--mobile">
+          <div class="title">
+            <h3>Мясные акции</h3>
+            <div class="subtitle">лучшие предложения</div>
+            <div class="subtitle subtitle--big subtitle--mobile">
+              вкусно и выгодно
+            </div>
+          </div>
+          <div class="discounts__content">
+            <div class="discounts__slider swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a class="discounts-cart" href="sale.html">
+                    <div class="discounts-cart__images">
+                      <picture>
+                        <source srcset="img/discount.webp" type="image/webp" />
+                        <img
+                          class="discounts-cart__img"
+                          src="img/discount.jpg"
+                          alt="Акция"
+                        />
+                      </picture>
+                    </div>
+                    <div class="discounts-cart__desc">
+                      <div class="discounts-club__title">Каждый день</div>
+                      <p class="discounts-club__time">после 20:00</p>
+                      <p class="discounts-club__text">
+                        на всю сладкую <br />
+                        выпечку <br />
+                        скидка 50%
+                      </p>
+                    </div>
+                    <span class="discounts-club__more">подробнее</span>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="discounts-cart" href="sale.html">
+                    <div class="discounts-cart__images">
+                      <img
+                        class="discounts-cart__img"
+                        src="img/discount.jpg"
+                        alt="Акция"
+                      />
+                    </div>
+                    <div class="discounts-cart__desc">
+                      <div class="discounts-club__title">Каждый день</div>
+                      <p class="discounts-club__time">после 20:00</p>
+                      <p class="discounts-club__text">
+                        на всю сладкую <br />
+                        выпечку <br />
+                        скидка 50%
+                      </p>
+                    </div>
+                    <span class="discounts-club__more">подробнее</span>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a class="discounts-cart" href="sale.html">
+                    <div class="discounts-cart__images">
+                      <img
+                        class="discounts-cart__img"
+                        src="img/discount.jpg"
+                        alt="Акция"
+                      />
+                    </div>
+                    <div class="discounts-cart__desc">
+                      <div class="discounts-club__title">Каждый день</div>
+                      <p class="discounts-club__time">после 20:00</p>
+                      <p class="discounts-club__text">
+                        на всю сладкую <br />
+                        выпечку <br />
+                        скидка 50%
+                      </p>
+                    </div>
+                    <span class="discounts-club__more">подробнее</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a class="discounts__kink" href="#">
+              <img src="img/arrow-link.svg" alt="" />
+            </a>
+          </div>
+        </section>
         <footer class="footer footer-delivery">
           <a class="footer__phone--mobile" href="tel:+78126701555"
             >8 (812) 670-15-55</a
@@ -2772,8 +2858,12 @@
           <button class="delivery-popup__close" data-btnBasket="data-btnBasket">
             <span></span>
           </button>
+          <div class="cart__price cart__price--mobile">
+            <div class="new-price">119₽</div>
+            <div class="old-price">119₽</div>
+          </div>
           <div class="delivery-popup__image">
-            <img src="img/products/product.jpg" alt="Салат" />
+            <img src="img/products/product.png" alt="Салат" />
           </div>
           <div class="delivery-popup__content">
             <div class="delivery-popup__info">
