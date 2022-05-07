@@ -184,9 +184,9 @@ if (closeModal) {
 }
 
 //модальное окно в корзине
-if (document.querySelector("[data-btnBasket]")) {
+if (document.querySelector("[data-basket-btn]")) {
   const basketBtnn = document
-    .querySelector(".basket-products__btn")
+    .querySelector("[data-basket-btn]")
     .addEventListener("click", (event) => {
       event.preventDefault();
       modal.classList.add("modal-active");
