@@ -292,7 +292,6 @@ a {
 }
 
 .clubs {
-  margin-top: 107px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1520,7 +1519,8 @@ a {
 .bg-bull--mobile,
 .delivery-mobile,
 .discounts--mobile,
-.cart__price--mobile {
+.cart__price--mobile,
+.title--restaraunt:after {
   display: none;
 }
 
@@ -2079,7 +2079,7 @@ a {
   }
 
   .title--restaraunt h3 {
-    font-size: 41px;
+    font-size: 20px !important;
     line-height: 1;
   }
 
@@ -2646,6 +2646,26 @@ a {
   .delivery-desktop {
     display: none;
   }
+  .title--restaraunt .subtitle {
+    font-size: 40px;
+  }
+  .cart__img {
+    height: 90px;
+  }
+  .title--restaraunt:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 390px;
+    height: 20px;
+    background-image: url("../img/bg-title-mobile.svg");
+    z-index: -1;
+  }
+  .main {
+    margin-top: 40px;
+  }
   .delivery-mobile,
   .discounts--mobile {
     display: block;
@@ -2721,10 +2741,11 @@ a {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    padding-top: 93px;
   }
 
   .logo {
-    width: 100%;
+    width: 248px;
     text-align: center;
   }
 
@@ -2971,7 +2992,7 @@ a {
     border-radius: 20px 20px 0px 0px;
     z-index: 2;
     width: 370px;
-    height: 95vh;
+    height: 740px;
     position: fixed;
     margin: 0 auto;
     bottom: 0;
@@ -2993,11 +3014,19 @@ a {
     line-height: 2;
     font-size: 15px;
   }
-  .modal .products,
-  .modal .addresses {
+  .modal .products {
     height: 80%;
     overflow: hidden;
     overflow-y: auto;
+  }
+  .modal .addresses {
+    height: 95%;
+    overflow: hidden;
+    overflow-y: auto;
+    column-count: 1 !important;
+  }
+  .delivery-popup .count {
+    font-size: 20px;
   }
 
   .modal-active {
@@ -3303,6 +3332,10 @@ a {
     font-size: 15px;
     height: 47px;
   }
+  .basket-products__btn--form {
+    outline: none;
+    border: none;
+  }
 
   .description,
   .restaurant__slider,
@@ -3352,7 +3385,7 @@ a {
   .restaurant__photo img {
     -o-object-fit: cover;
     object-fit: cover;
-    width: 368px;
+    /* width: 368px; */
     height: 197px;
   }
 
@@ -3369,7 +3402,7 @@ a {
   }
 
   .clubs__slider--restaurant {
-    display: block;
+    display: flex;
     margin-bottom: 95px;
   }
 
@@ -3380,7 +3413,7 @@ a {
   }
 
   .btn-block__list {
-    margin-left: 80px;
+    padding-left: 80px !important;
     overflow-x: auto;
     overflow-y: hidden;
   }
@@ -3398,6 +3431,7 @@ a {
     right: -10px;
     position: absolute;
     padding: 10px 0 0 10px;
+    padding-left: 30px;
     height: 100px;
     display: flex;
     align-items: center;
@@ -3429,7 +3463,7 @@ a {
 
   .cart--delivery {
     width: 150px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     box-shadow: 0px 8px 20px rgb(168 41 31 / 50%);
   }
 
@@ -3464,7 +3498,7 @@ a {
 
   .cart__name {
     font-size: 10px;
-    line-height: 1.4;
+    line-height: 13px;
   }
 
   .cart__btn {
@@ -3510,16 +3544,18 @@ a {
 
   .delivery-popup.modal-active {
     width: auto;
-    height: 95vh;
-    bottom: -12px;
+    bottom: -80px;
     top: auto;
+    /* height: 0px; */
+  }
+  .delivery-popup__body {
   }
 
   .delivery-popup__body {
     width: 90%;
-    padding-bottom: 118px;
+    padding-bottom: 218px;
     padding-top: 45px;
-    height: 90vh;
+    height: 1000px;
     background: linear-gradient(180deg, #000000 -35.95%, #a8291f 100%);
     border: none;
   }
@@ -3598,10 +3634,12 @@ a {
     margin-top: 13px;
   }
   .clubs__slider {
-    /* margin-left: 0 !important; */
+    margin-left: 13px !important;
+    width: 390px !important;
   }
   .discounts__slider {
-    padding-bottom: 35px;
+    padding-bottom: 35px !important;
+    z-index: -1 !important;
   }
   .delivery__content {
     margin-bottom: 0;
@@ -3640,6 +3678,9 @@ a {
     display: flex;
   }
 
+  .title--restaraunt h3 {
+    font-size: 21px;
+  }
   .title--restaraunt .subtitle {
     font-size: 39px;
   }
