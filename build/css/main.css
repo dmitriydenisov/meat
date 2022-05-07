@@ -812,7 +812,7 @@ a {
 .delivery__content {
   margin-top: 85px;
   margin-bottom: 982px;
-  width: 1531px;
+  width: 90%;
 }
 
 .categories__items {
@@ -831,7 +831,8 @@ a {
 }
 
 .cart--delivery {
-  width: 475px;
+  /* width: 475px; */
+  width: 30%;
   margin-bottom: 85px;
   /* box-shadow: none; */
 }
@@ -1501,6 +1502,7 @@ a {
   font-size: 45px;
   line-height: 59px;
   white-space: pre-line;
+  text-align: center;
 }
 
 .subtitle--mobile,
@@ -2687,9 +2689,10 @@ a {
     z-index: -3;
   }
   .sale__text--mobile {
-    margin-top: 0;
+    margin-top: 34px;
     display: block;
     white-space: normal;
+    width: 370px;
   }
   .delivery-popup__close span {
     height: 20px;
@@ -2889,7 +2892,9 @@ a {
   .download {
     margin-bottom: 25px;
   }
-
+  .wrapper {
+    z-index: 999;
+  }
   .footer__bottom {
     padding-bottom: 85px;
   }
@@ -2939,7 +2944,7 @@ a {
     /* left: 0; */
     left: 50%;
     margin-left: -187px;
-    z-index: 3;
+    z-index: 987;
   }
 
   .mobile-nav__item {
@@ -3349,7 +3354,7 @@ a {
     display: block;
     font-size: 15px;
     line-height: 20px;
-    width: auto;
+    width: 370px;
   }
 
   .restaurant-menu--mobile {
@@ -3546,6 +3551,7 @@ a {
     width: auto;
     bottom: -80px;
     top: auto;
+    z-index: 99;
     /* height: 0px; */
   }
   .delivery-popup__body {
@@ -3637,9 +3643,11 @@ a {
     margin-left: 13px !important;
     width: 390px !important;
   }
+  .discounts__content {
+    z-index: -1;
+  }
   .discounts__slider {
     padding-bottom: 35px !important;
-    z-index: -1 !important;
   }
   .delivery__content {
     margin-bottom: 0;
