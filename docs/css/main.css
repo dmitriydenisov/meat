@@ -1502,7 +1502,6 @@ a {
   font-size: 45px;
   line-height: 59px;
   white-space: pre-line;
-  text-align: center;
 }
 
 .subtitle--mobile,
@@ -2693,6 +2692,7 @@ a {
     display: block;
     white-space: normal;
     width: 370px;
+    text-align: center;
   }
   .delivery-popup__close span {
     height: 20px;
