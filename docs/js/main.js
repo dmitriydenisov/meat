@@ -3,6 +3,7 @@ if (document.querySelector(".clubs__slider")) {
     slidesPerView: 2.4,
     spaceBetween: 15,
     loop: true,
+    // width: "390",
     autoplay: {
       delay: 1500,
       disableOnInteraction: false,
@@ -131,6 +132,8 @@ const menu = document.querySelector(".btn-block__btn-more");
 if (menu) {
   menu.addEventListener("click", function () {
     this.classList.add("btn-block__item-more--active");
+
+    document.body.style.overflow = "hidden";
   });
 }
 
