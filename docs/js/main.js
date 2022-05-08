@@ -42,15 +42,15 @@ if (document.querySelector(".discounts__slider")) {
 if (document.documentElement.clientWidth >= 1000) {
   if (document.querySelector(".restaurant__slider")) {
     const restaurantSlider = new Swiper(".restaurant__slider", {
-      autoHeight: true,
+      // autoHeight: true,
       slidesPerView: 3,
-      autoWidth: true,
+      // autoWidth: true,
       spaceBetween: 22,
       loop: true,
-      autoplay: {
-        delay: 1500,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 1500,
+      //   disableOnInteraction: false,
+      // },
       breakpoints: {
         1730: {
           slidesPerView: 2,
@@ -58,7 +58,7 @@ if (document.documentElement.clientWidth >= 1000) {
         },
         2300: {
           slidesPerView: 3,
-          spaceBetween: 1,
+          spaceBetween: 22,
         },
       },
     });
