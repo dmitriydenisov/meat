@@ -2311,7 +2311,8 @@ a {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 0;
+    bottom: 17px;
+    padding: 12px 32px;
   }
   .delivery-popup__image {
     height: 50%;
@@ -2790,7 +2791,7 @@ a {
     position: absolute;
     max-width: 100%;
     top: 40%;
-    left: 10px;
+    left: 7px;
     transform: translateY(-40%);
     z-index: -3;
   }
@@ -2930,7 +2931,7 @@ a {
     width: 151px;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    border: 2px solid #ca4f45;
+    border: 1px solid #ca4f45;
   }
 
   .discounts-cart__images img {
@@ -2940,7 +2941,7 @@ a {
   .discounts-cart__images:before {
     width: 151px;
     height: 151px;
-    top: -17px;
+    top: -22px;
   }
 
   .discounts-club__title {
