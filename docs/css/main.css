@@ -3515,6 +3515,7 @@ a {
   .cart__img img {
     width: 148px;
     height: 90px;
+    object-fit: contain;
   }
 
   .cart__price {
