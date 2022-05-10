@@ -2790,7 +2790,7 @@ a {
     position: absolute;
     max-width: 100%;
     top: 40%;
-    left: 3px;
+    left: 10px;
     transform: translateY(-40%);
     z-index: -3;
   }
