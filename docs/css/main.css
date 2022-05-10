@@ -17,6 +17,9 @@ body {
   position: relative;
 }
 
+.cart-img {
+  width: 100%;
+}
 .bg-bull,
 .bg-delivery-r {
   position: absolute;
@@ -134,6 +137,9 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   margin-bottom: 100px;
+}
+.download__apple {
+  margin-right: 40px;
 }
 
 .download--restauran {
@@ -522,10 +528,19 @@ a {
   font-size: 25px;
   text-transform: uppercase;
   margin: 17px 0;
-  margin-left: 45px;
+  padding-left: 45px;
 }
-
-.addresses-list__item:before {
+.addresses-list__item img {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+}
+/* .addresses-list__item:before {
   content: "";
   position: absolute;
   left: -45px;
@@ -535,7 +550,7 @@ a {
   transform: translateY(-50%);
   width: 34px;
   height: 34px;
-}
+} */
 
 .addresses-list__item--orange:before {
   background-image: url("../img/orange.svg");
@@ -676,6 +691,7 @@ a {
 .tabs-content {
   margin: 0 auto;
   margin-top: 77px;
+  overflow: hidden;
 }
 
 .tabs-content__item {
@@ -1226,7 +1242,14 @@ a {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
+.form__links {
+  margin-top: 40px;
+}
+.form__link {
+  display: block;
+  font-size: 25px;
+  line-height: 33px;
+}
 .basket-content__form {
   margin-top: 66px;
   display: -webkit-box;
@@ -1531,11 +1554,12 @@ a {
 .delivery-mobile,
 .discounts--mobile,
 .cart__price--mobile,
-.title--restaraunt:after {
+.title--restaraunt:after,
+.bg-mobile {
   display: none;
 }
 .restaurant__slider {
-  width: 2098px !important;
+  width: 2096px !important;
 }
 .restaurant__slider .swiper-slide {
   width: 681px !important;
@@ -2055,7 +2079,7 @@ a {
   }
 
   .addresses-list__item {
-    font-size: 12px;
+    font-size: 20px;
   }
 
   .download__apple img {
@@ -2215,6 +2239,27 @@ a {
 }
 
 @media (max-width: 1366px) {
+  .discounts-cart__images {
+    width: 284px;
+  }
+  .discounts-cart__images:before {
+    left: -17px;
+    top: -15px;
+  }
+  .cart__img {
+    height: 200px;
+  }
+  .cart__img img {
+    object-fit: contain;
+  }
+  .logo,
+  .logo img {
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(168, 41, 31, 0.6));
+    filter: drop-shadow(0px 0px 8px rgba(168, 41, 31, 0.6));
+  }
+  .cart {
+    box-shadow: 4px 4px 7px #851b13;
+  }
   .cart__desc {
     padding: 40px 13px;
   }
@@ -2262,7 +2307,15 @@ a {
     width: 80%;
     margin-top: 30px;
   }
-
+  .delivery-popup__content .cart__add {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+  .delivery-popup__image {
+    height: 50%;
+  }
   .delivery-popup__text {
     width: 50%;
     font-size: 14px;
@@ -2316,9 +2369,13 @@ a {
     height: 511px;
   }
 
+  .restaurant__slider {
+    width: 101% !important;
+  }
+
   .restaurant__slider .swiper-slide {
     text-align: center;
-    max-width: 500px;
+    width: 395px !important;
     overflow: hidden;
   }
 
@@ -2673,6 +2730,20 @@ a {
   .delivery-desktop {
     display: none;
   }
+  .bg-mobile {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 90px;
+    max-width: 390px;
+  }
+  /* .addresses-list__item img {
+    width: 15px;
+    height: 15px;
+  } */
+
   .title--restaraunt .subtitle {
     font-size: 40px;
   }
@@ -2719,7 +2790,7 @@ a {
     position: absolute;
     max-width: 100%;
     top: 40%;
-    left: 0;
+    left: 3px;
     transform: translateY(-40%);
     z-index: -3;
   }
@@ -2848,6 +2919,7 @@ a {
 
   .discounts {
     margin-top: 100px;
+    margin-bottom: 70px;
   }
 
   .discounts__kink {
@@ -2858,6 +2930,7 @@ a {
     width: 151px;
     -ms-flex-negative: 0;
     flex-shrink: 0;
+    border: 2px solid #ca4f45;
   }
 
   .discounts-cart__images img {
@@ -2908,7 +2981,7 @@ a {
 
   .addresses {
     display: block;
-    width: 400px;
+    width: 100%;
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
@@ -2923,12 +2996,15 @@ a {
   }
 
   .addresses-list__item {
+    padding-left: 25px;
+    line-height: 13px;
     font-size: 10px;
-    line-height: 44px;
     margin-top: 0;
-    margin-bottom: 0;
   }
-
+  .addresses-list__item img {
+    width: 15px;
+    height: 15px;
+  }
   .download {
     margin-bottom: 25px;
   }
@@ -3051,6 +3127,13 @@ a {
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
+  }
+  .modal .addresses .addresses-list .addresses-list__item {
+    padding-left: 57px;
+  }
+  .modal .addresses .addresses-list .addresses-list__item img {
+    width: 25px;
+    height: 25px;
   }
 
   .modal .addresses-list__item {

@@ -27,10 +27,10 @@ if (document.querySelector(".discounts__slider")) {
     slidesPerView: 1,
     spaceBetween: 60,
     loop: true,
-    autoplay: {
-      delay: 1500,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 1500,
+    //   disableOnInteraction: false,
+    // },
     breakpoints: {
       900: {
         slidesPerView: 2,
@@ -47,10 +47,10 @@ if (document.documentElement.clientWidth >= 1000) {
       // autoWidth: true,
       spaceBetween: 22,
       loop: true,
-      // autoplay: {
-      //   delay: 1500,
-      //   disableOnInteraction: false,
-      // },
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
       breakpoints: {
         1730: {
           slidesPerView: 2,
