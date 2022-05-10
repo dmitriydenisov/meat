@@ -10,13 +10,13 @@ if (document.querySelector(".clubs__slider")) {
     },
     breakpoints: {
       900: {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 15,
         centeredSlides: false,
       },
-      900: {
-        slidesPerView: 4,
+      2000: {
         spaceBetween: 39,
+        // slidesPerView: 4,
       },
     },
   });
