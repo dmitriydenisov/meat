@@ -2589,6 +2589,12 @@ a {
   .delivery-popup__body .count {
     padding: 0px;
   }
+  .delivery-popup__body .cart__add {
+    justify-content: space-around;
+  }
+  .delivery-popup__body .cart__btn {
+    margin-right: 15px;
+  }
 
   .basket-products__name,
   .cart__price--basket,
