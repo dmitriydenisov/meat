@@ -2586,6 +2586,9 @@ a {
   .delivery-popup-description {
     width: 45%;
   }
+  .delivery-popup__body .cart__count .count {
+    padding: 0px;
+  }
 
   .basket-products__name,
   .cart__price--basket,
@@ -3727,9 +3730,6 @@ a {
   .delivery-popup__body .cart__count {
     margin: 0;
     margin-left: -15px;
-  }
-  .delivery-popup__body .cart__count .count {
-    padding: 0px;
   }
 
   .delivery-popup__close {
