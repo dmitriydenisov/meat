@@ -2586,7 +2586,7 @@ a {
   .delivery-popup-description {
     width: 45%;
   }
-  .delivery-popup__body .cart__count .count {
+  .delivery-popup__body .count {
     padding: 0px;
   }
 
