@@ -2586,15 +2586,6 @@ a {
   .delivery-popup-description {
     width: 45%;
   }
-  .delivery-popup__body .count {
-    padding: 0px;
-  }
-  .delivery-popup__body .cart__add {
-    justify-content: space-around;
-  }
-  .delivery-popup__body .cart__btn {
-    margin-right: 15px;
-  }
 
   .basket-products__name,
   .cart__price--basket,
@@ -3723,7 +3714,6 @@ a {
     margin-top: 10px;
     width: 300px;
     transform: translateX(0);
-    padding: 5px 32px;
   }
 
   .delivery-popup__body .cart__btn,
@@ -3731,11 +3721,13 @@ a {
     display: flex;
   }
   .delivery-popup__body .cart__btn {
-    font-weight: 700;
   }
   .delivery-popup__body .cart__count {
     margin: 0;
     margin-left: -15px;
+  }
+  .delivery-popup__body .cart__count .count {
+    padding: 0px;
   }
 
   .delivery-popup__close {
