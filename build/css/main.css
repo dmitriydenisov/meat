@@ -3813,6 +3813,11 @@ a {
   }
 }
 
+@media (max-width: 400px) {
+  .bg-bull--mobile {
+    left: 0;
+  }
+}
 @media (max-width: 390px) {
   .delivery-popup-description__name,
   .delivery-popup-description__kkol {
