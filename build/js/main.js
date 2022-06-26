@@ -15,8 +15,8 @@ if (document.querySelector(".clubs__slider")) {
         centeredSlides: false,
       },
       2000: {
+        slidesPerView: 4,
         spaceBetween: 39,
-        // slidesPerView: 4,
       },
     },
   });
@@ -133,7 +133,14 @@ if (menu) {
   menu.addEventListener("click", function () {
     this.classList.add("btn-block__item-more--active");
 
-    document.body.style.overflow = "hidden";
+    document.addEventListener("click", function (e) {
+      const click = e.composedPath().includes(menu);
+      if (!click) {
+        menu.classList.remove("btn-block__item-more--active");
+      }
+    });
+
+    // document.body.style.overflow = "hidden";
   });
 }
 
