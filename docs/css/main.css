@@ -845,7 +845,7 @@ a {
 
 .categories__items--active {
   display: grid;
-  grid-template-columns: 380px 380px 380px
+  grid-template-columns: 30% 30% 30%;
 }
 
 .cart--delivery {
